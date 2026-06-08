@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: var(--bg);
+  background-color: #E8400A;
   color: var(--black);
   font-family: 'Pretendard', sans-serif; 
   min-height: 100vh;
@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   padding: 14px 24px;
   background-color: var(--black);
-  border-bottom: 3px solid var(--red);
+  border-bottom: none;
 }
 
 .nav-logo {
@@ -163,7 +163,7 @@ body {
 /* ── HOME PAGE ── */
 #page-home {
   min-height: 100vh;
-  padding-top: 57px;
+  padding-top: 56px;
   display: flex;
   flex-direction: column;
 }
@@ -178,11 +178,12 @@ body {
 .home-header::after {
   content: '';
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 4px;
   background: var(--black);
+  z-index: 2;
 }
 
 .exhibition-meta {
@@ -218,6 +219,25 @@ body {
   color: var(--black);
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+.hero-logo-bg {
+  position: absolute;
+  right: 0;
+  top: 0%;        /* 위로 삐져나오는 정도 조절 */
+  width: 55%;
+  max-width: 480px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 기존 텍스트들이 로고 위에 오도록 */
+.exhibition-meta,
+.exhibition-title-kr,
+.exhibition-title-en,
+.exhibition-date {
+  position: relative;
+  z-index: 2;
 }
 
 .home-body {
