@@ -45,15 +45,14 @@ body {
 }
 
 .nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.2rem;
   color: var(--white);
-  letter-spacing: 0.15em;
   text-decoration: none;
 }
 
-.nav-logo span {
-  color: var(--red);
+.nav-logo svg {
+  height: 28px;
+  width: auto;
+  fill: var(--white);
 }
 
 .hamburger {
