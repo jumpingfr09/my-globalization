@@ -224,8 +224,9 @@ body {
 .hero-logo-bg {
   position: absolute;
   right: 0;
-  top: 0%;        /* 위로 삐져나오는 정도 조절 */
-  width: 55%;
+  top: 0;
+  height: 100%;
+  width: auto;
   max-width: 480px;
   z-index: 1;
   pointer-events: none;
